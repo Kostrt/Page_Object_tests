@@ -1,10 +1,10 @@
 
 from selenium.webdriver.common.by import By
 
-def go_to_login_page(browser):
-    login_link = browser.find_element(By.CSS_SELECTOR, "#login_link")
-    login_link.click()
+class BasePage():
+    def __init__(self, browser, url):
+        self.browser = browser
+        self.url = url
 
-def test_guest_can_go_to_login_page(browser): 
-   browser.get(link) 
-   go_to_login_page(browser) 
+    def open(self):
+        self.browser.get(self.url) 
