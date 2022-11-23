@@ -1,6 +1,4 @@
-from .pages.product_page import ProductPage
-from .pages.base_page import BasePage
-from .pages.locators import ProductPageLocators
+from .pages.product_page import ProductPages
 import pytest
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
