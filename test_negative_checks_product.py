@@ -1,4 +1,4 @@
-from .pages.product_page import ProductPages
+from .pages.product_page import ProductPage
 import pytest
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"

@@ -9,13 +9,13 @@ class BasePageLocators():
 
 class LoginPageLocators():
     LOGIN_URL = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
-    LOGIN_USERNAME = (By.NAME, "login-username") #  test 
-    LOGIN_PASSWORD = (By.NAME, "login-password") # test
+    LOGIN_USERNAME = (By.NAME, "login-username")
+    LOGIN_PASSWORD = (By.NAME, "login-password") 
     LOGIN_BUTTON = (By.NAME, "login_submit")
 
     REGISTRATION_EMAIL = (By.NAME, "registration-email")
     REGISTRATION_PASSWORD1 = (By.NAME, "registration-password1")
-    REGISTRATION_PASSWORD2 = (By.NAME, "registration-password2") # test
+    REGISTRATION_PASSWORD2 = (By.NAME, "registration-password2")
     REGISTRATION_BUTTON = (By.NAME, "registration_submit")
 
 class ProductPageLocators():
