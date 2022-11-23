@@ -1,11 +1,12 @@
 from selenium.webdriver.common.by import By
 
-
-class MainPageLocators():
+class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
 
 class LoginPageLocators():
-    LOGIN_LINK = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
+    LOGIN_URL = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
     LOGIN_USERNAME = (By.NAME, "login-username") #  test 
     LOGIN_PASSWORD = (By.NAME, "login-password") # test
     LOGIN_BUTTON = (By.NAME, "login_submit")
@@ -21,4 +22,4 @@ class ProductPageLocators():
     PRICE_PRODUCT = (By.CSS_SELECTOR, "p.price_color")
     NAME_PRODUCT_CHECK = (By.CSS_SELECTOR, ".alertinner strong")
     NAME_PRODUCT = (By.CSS_SELECTOR, ".product_main h1")
-
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alertinner ")

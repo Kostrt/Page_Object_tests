@@ -8,7 +8,7 @@ class LoginPage(BasePage):
         self.should_be_register_form()
 
     def should_be_login_url(self):
-        assert "login" in LoginPageLocators.LOGIN_LINK, "Login url have no 'login1' "  # реализуйте проверку на корректный url адрес
+        assert "login" in LoginPageLocators.LOGIN_URL, "Login url have no 'login1' "  # реализуйте проверку на корректный url адрес
     
 
     def should_be_login_form(self):
